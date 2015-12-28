@@ -1,0 +1,595 @@
+/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #c86547;
+    margin: 0 0 25px 0;
+    padding: 5px 0 0;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    opacity: 0.9;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+    .header h1
+    {
+        font-weight: 700;
+        margin: 0px;
+        padding: 0px 0px 0px 20px;
+        color: #f9f9f9;
+        border: none;
+        line-height: 2em;
+        font-size: 2em;
+    }
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+    div.menu ul
+    {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+    }
+
+        div.menu ul li a, div.menu ul li a:visited
+        {
+            background-color: #465c71;
+            border: 1px #4e667d solid;
+            color: #dde4ec;
+            display: block;
+            line-height: 1.35em;
+            padding: 4px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            div.menu ul li a:hover
+            {
+                background-color: #bfcbd6;
+                color: #465c71;
+                text-decoration: none;
+            }
+
+            div.menu ul li a:active
+            {
+                background-color: #465c71;
+                color: #cfdbe6;
+                text-decoration: none;
+            }
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+    fieldset p
+    {
+        margin: 2px 12px 10px 10px;
+    }
+
+    fieldset.login label, fieldset.register label, fieldset.changePassword label
+    {
+        display: block;
+    }
+
+    fieldset label.inline
+    {
+        display: inline;
+    }
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+    .loginDisplay a:link
+    {
+        color: white;
+    }
+
+    .loginDisplay a:visited
+    {
+        color: white;
+    }
+
+    .loginDisplay a:hover
+    {
+        color: white;
+    }
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+input, textarea, select
+{
+    padding: 9px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: #FFFFFF url('bg_form.png') repeat-x left top;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+.box_simple
+{
+    position: relative;
+    width: auto;
+    background: #eee;
+    -moz-border-radius: 14px;
+    border-radius: 4px;
+    /*padding: 2em 1.5em;*/
+    padding: 10px;
+    color: rgba(0,0,0, .8);
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.5;
+    margin: 20px auto;
+    border: 1px solid #465c71;
+    /*padding: 10px;
+    margin: 20px 0;*/
+}
+
+    .box_simple span
+    {
+        color: #465c71;
+        font-size: 14px;
+    }
+
+    .box_simple .important
+    {
+        clear: both;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #e86547;
+        margin: 0 0 0px 10px;
+        padding: 5px 0 0;
+    }
+
+    .box_simple span.name
+    {
+        width: 80px;
+        display: inline-block;
+        margin: 5px 10px 5px 5px;
+    }
+
+.box
+{
+    position: relative;
+    width: auto;
+    background: #eee;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2em 1.5em;
+    color: rgba(0,0,0, .8);
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.5;
+    margin: 30px auto;
+    /*padding: 10px;
+    margin: 20px 0;*/
+}
+
+    .box:before, .box:after
+    {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+        -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+
+    .box:after
+    {
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+        right: 10px;
+        left: auto;
+    }
+
+    .box h2
+    {
+        font-family: helvetica, arial, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #e86547;
+        margin: 0 0 25px 0;
+        padding: 5px 0 0;
+    }
+
+.form label
+{
+    margin-left: 10px;
+    color: #999999;
+}
+
+.form .oneline
+{
+    margin: 10px 0px;
+}
+
+.form h2
+{
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #e86547;
+    margin: 0 0 25px 0;
+    padding: 15px 0 0;
+}
+
+.submit
+{
+    width: auto;
+    padding: 9px 15px;
+    background: #617798;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 10px auto;
+}
+
+select:hover, input:hover, textarea:hover,
+input:focus, textarea:focus, select:focus
+{
+    border-color: #C9C9C9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+.watermarked
+{
+    color: #999999;
+}
+
+div.input
+{
+    margin: 10px 0px;
+}
+	div.input span
+	{
+		display:inline-block;
+		width:100px;
+		margin:0 5px;
+		text-align:right;
+	}
+
+    
+
+
+.box_transit_senderinfo
+{
+    margin: 20px;
+    font-size: 20px;
+}
+
+    .box_transit_senderinfo .name
+    {
+        font-weight: bold;
+        text-align: left;
+        width: 300px;
+        margin: 10px;
+        padding: 0px 20px;
+    }
+
+    .box_transit_senderinfo .from
+    {
+        text-align: left;
+        margin: 10px;
+        padding: 0px 20px;
+    }
+
+
+.box_transit_receiverinfo
+{
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+    .box_transit_receiverinfo .from
+    {
+        text-align: left;
+        margin: 10px;
+        padding: 0px 20px;
+    }
+
+
+.box_transit
+{
+    width: 800px;
+    background-color: #eee;
+    -moz-border-radius: 14px;
+    border-radius: 4px;
+    /*padding: 2em 1.5em;*/
+    /*padding: 10px;*/
+    color: rgba(0,0,0, .8);
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.5;
+    margin: 2px;
+    display: inline-block;
+}
+
+    .box_transit .branch_name
+    {
+        width: 160px;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+        float: left;
+        height: 30px;
+        margin: 0px 0px;
+        padding: 10px 10px 5px 10px;
+        text-align: center;
+        background-color: #ddd;
+    }
+
+    .box_transit .branch_address
+    {
+        width: 400px;
+        float: left;
+        margin: 0px 10px;
+        padding: 10px;
+    }
+
+    .box_transit .branch_status
+    {
+        width: 100px;
+        float: left;
+        margin: 0px 10px;
+        padding: 10px;
+        text-align: center;
+        color: red;
+        font-weight: bold;
+    }
+
+div.LeftMenu
+{
+    margin: 20px auto;
+    text-align: left;
+}
+
+    div.LeftMenu ul
+    {
+        list-style-type: none;
+    }
+
+        div.LeftMenu ul li
+        {
+            line-height: 40px;
+            margin-left: 5px;
+            vertical-align: top;
+        }
+
+            div.LeftMenu ul li span
+            {
+                vertical-align:top;
+                
+            }
+
+            div.LeftMenu ul li img
+            {
+                padding-top: 5px;
+                margin-top: 5px;
+                margin-right:10px;
+            }
